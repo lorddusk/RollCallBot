@@ -102,3 +102,4 @@ ENV/
 .idea
 data/
 players.json
+config.ini
