@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"channelid": {
+			"type": "integer"
+		},
+		"name": {
+			"type": "string"}
+		},
+		"users": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"username": {
+							"type": "string"
+						},
+						"status": {
+							"type": "string"
+						},
+						"reason": {
+							"type": "string"
+						}
+					}
+				}
+			]
+		}
+	}

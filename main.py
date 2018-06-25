@@ -8,7 +8,6 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 config = ConfigParser()
-initDatabase()
 checkForConfig(logger)
 config.read('config.ini')
 token = config.get('config', 'token')

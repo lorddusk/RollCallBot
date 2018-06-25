@@ -7,8 +7,7 @@ logger = logging.getLogger(__name__)
 
 def start(bot, update):
     logger.info("start")
-    startRollCall(update.message)
-    update.message.reply_text('Roll call started')
+    startRollCall(update)
 
 
 def end(bot, update):
@@ -17,6 +16,8 @@ def end(bot, update):
 
 def call_in(bot, update):
     logger.info("in")
+    inMessage(update)
+
 
 
 def call_out(bot, update):
